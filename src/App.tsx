@@ -1,9 +1,13 @@
-import "./index.css"
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Services from "./components/Services";
 
 export default function App() {
   return (
-    <div className="">
-      <h1 className="text-red-500 font-bold underline text-lg">Olá Mundo</h1>
-    </div>
+    <>
+      <Header />
+      <Hero />
+      <Services />
+    </>
   );
 }
