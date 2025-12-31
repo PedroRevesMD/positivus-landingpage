@@ -1,4 +1,5 @@
-export default function Heade() {
+import "../index.css"
+export default function Header() {
   return (
     <header>
       <img src="" alt="Positivus's Logo" />

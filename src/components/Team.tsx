@@ -85,6 +85,7 @@ export default function Team() {
           </article>
         </li>
       </ul>
+      <button type="button">See all team</button>
     </section>
   )
 }
