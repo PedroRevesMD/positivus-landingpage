@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+@theme {
+  --font-grotesk: "Space Grotesk", sans-serif;
+  --dark-gray: #191A23;
+}
