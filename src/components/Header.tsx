@@ -1,12 +1,10 @@
 import "../index.css"
 import logo from "../assets/logo.svg"
 export default function Header() {
-  // TODO: Add Responsiviness (Menu Button and Nav Links, Logo Image)
-  // FIX: Border Bug on "Menu Button" and "Request a Quote" Button
   return (
-    <header className="flex justify-between mt-16 mx-20 font-grotesk mb-30 items-center">
+    <header className="flex mx-12 my-6 justify-between font-grotesk items-center px-8">
       <img src={logo} alt="Positivus's Logo" className="size-40" />
-      <nav className="hidden md:flex items-center">
+      <nav className="hidden lg:flex items-center">
         <ul className="flex gap-x-8 text-lg">
           <li><a href="/">About us</a></li>
           <li><a href="/">Services</a></li>
@@ -14,9 +12,9 @@ export default function Header() {
           <li><a href="/">Pricing</a></li>
           <li><a href="/">Blog</a></li>
         </ul>
-        <a href="/" className="border-dark-gray border-x text-xl rounded-xl py-2 px-4">Request a Quote</a>
+        <a href="/" className="border-dark-gray border border-solid text-xl rounded-xl ml-8 py-2 px-4">Request a Quote</a>
       </nav>
-      <button type="button" className="cursor-pointer md:hidden font-grotesk borderd-dark-gray border-solid">Menu</button>
+      <button type="button" className="cursor-pointer lg:hidden border border-solid font-grotesk border-dark-gray border-solid py-1.5 px-4 rounded-xl">Menu</button>
     </header>
   )
 }
