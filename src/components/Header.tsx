@@ -12,7 +12,7 @@ export default function Header() {
           <li><a href="/">Pricing</a></li>
           <li><a href="/">Blog</a></li>
         </ul>
-        <a href="/" className="border-dark-gray border border-solid text-xl rounded-xl ml-8 py-2 px-4">Request a Quote</a>
+        <a href="/" className="border-dark-gray border border-solid text-xl rounded-xl ml-8 py-4 px-6">Request a Quote</a>
       </nav>
       <button type="button" className="cursor-pointer lg:hidden border border-solid font-grotesk border-dark-gray border-solid py-1.5 px-4 rounded-xl">Menu</button>
     </header>
