@@ -44,7 +44,7 @@ export default function ServiceCard({ cardName, imgUrlPath, variant = "grey" }: 
   return (
     <article className={`${currentTheme.cardBg} rounded-4xl shadow-[0px_5px_0px_0px_rgba(25,_26,_35,_1)] max-w-2xl flex gap-x-20 items-center mb-8 p-12 border border-solid border-dark-gray`}>
       <div className="flex flex-col gap-y-16">
-        <h4 className={`${currentTheme.textBg} font-semibold text-md lg:text-2xl font-grotesk p-1.5 rounded-sm text-dark-gray`}>{cardName}</h4>
+        <h3 className={`${currentTheme.textBg} font-semibold text-md lg:text-2xl font-grotesk p-1.5 rounded-sm text-dark-gray`}>{cardName}</h3>
         <div className="flex gap-x-4 items-center">
           <span className={`${currentTheme.buttonText} font-grotesk cursor-pointer font-medium`}>Learn More</span>
         </div>

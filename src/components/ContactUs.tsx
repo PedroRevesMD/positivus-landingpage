@@ -8,7 +8,7 @@ export default function ContactUs() {
   return (
     <section className="max-w-screen m-4 lg:m-20 overflow-hidden px-4">
       <div className="flex flex-col lg:flex-row gap-x-8 items-center mb-10">
-        <h3 className="font-medium bg-lime-green px-4 py-2 rounded-xl text-black text-2xl font-grotesk">Contact Us</h3>
+        <h2 className="font-medium bg-lime-green px-4 py-2 rounded-xl text-black text-2xl font-grotesk">Contact Us</h2>
         <p className="text-base font-grotesk max-w-xs my-4 text-center lg:text-start">Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
       </div>
       <div className="bg-light-gray p-16 rounded-4xl gap-x-10 font-grotesk">

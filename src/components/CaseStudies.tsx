@@ -5,7 +5,7 @@ export default function CaseStudies() {
   return (
     <section className="max-w-screen m-8 lg:m-20">
       <div className="flex flex-col lg:flex-row gap-x-8 items-center">
-        <h3 className="font-medium bg-lime-green p-2 rounded-xl text-dark-gray text-2xl font-grotesk">Case Studies</h3>
+        <h2 className="font-medium bg-lime-green p-2 rounded-xl text-dark-gray text-2xl font-grotesk">Case Studies</h2>
         <p className="text-base font-grotesk my-4 text-center lg:text-start max-w-[520px]">Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies</p>
       </div>
       <div className="flex flex-col items-center lg:flex-row justify-between bg-dark-gray text-white my-16 mx-auto p-12 rounded-2xl">

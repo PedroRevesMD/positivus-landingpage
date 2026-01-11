@@ -9,7 +9,7 @@ export default function Hero() {
         <a href="/" className="my-4 bg-dark-gray font-grotesk text-white w-fit px-8 py-4 rounded-lg">Book a consultation</a>
       </div>
       <div className="mx-auto -mr-2">
-        <img src={HeroIllustration} alt="A marketing illustration" />
+        <img src={HeroIllustration} alt="A marketing illustration" width={600} height={500} />
       </div>
     </section>
   )

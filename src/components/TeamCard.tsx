@@ -9,7 +9,7 @@ export default function TeamCard({ imgUrlPath, name, position, description }: Te
           <div className="flex flex-col lg:flex-row items-center gap-y-4">
             <img src={imgUrlPath} alt={`${name}`} className="mx-2" width={80} height={80} loading="lazy" />
             <div className="font-grotesk mx-4">
-              <h4 className="font-semibold text-xl">{name}</h4>
+              <h3 className="font-semibold text-xl">{name}</h3>
               <p>{position}</p>
             </div>
           </div>
