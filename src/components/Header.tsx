@@ -2,7 +2,7 @@ import "../index.css"
 import logo from "../assets/logo.svg"
 export default function Header() {
   return (
-    <header className="flex mx-12 my-6 justify-between font-grotesk items-center px-8">
+    <header className="flex m-8 justify-between font-grotesk items-center px-8">
       <img src={logo} alt="Positivus's Logo" className="size-40" />
       <nav className="hidden lg:flex items-center">
         <ul className="flex gap-x-8 text-lg">
