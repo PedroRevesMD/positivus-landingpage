@@ -7,7 +7,6 @@ import Hero from "./components/Hero";
 import Logos from "./components/Logos";
 import Services from "./components/Services";
 import Team from "./components/Team";
-import Testimonials from "./components/Testimonials";
 import WorkingProcess from "./components/WorkingProcess";
 
 export default function App() {
@@ -21,7 +20,6 @@ export default function App() {
       <CaseStudies />
       <WorkingProcess />
       <Team />
-      <Testimonials />
       <ContactUs />
       <Footer />
     </>
