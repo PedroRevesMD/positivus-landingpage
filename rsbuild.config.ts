@@ -6,6 +6,7 @@ export default defineConfig({
   plugins: [pluginReact()],
   html: {
     title: "Positivus | Home",
+    favicon: "./public/favicon.ico",
     meta: {
       description: "A Landing page for a company called positivus",
     },
