@@ -1,5 +1,4 @@
 import "../index.css"
-import contactUsIllustration from "../assets/contactusIllustration.svg"
 
 export default function ContactUs() {
   const inputClasses = "w-full bg-white rounded-xl border border-dark-gray px-6 py-4 text-base placeholder:text-dark-gray/40 focus:outline-none focus:ring-2 focus:ring-lime-300 transition-all";
@@ -12,8 +11,8 @@ export default function ContactUs() {
         <h3 className="font-medium bg-lime-green px-4 py-2 rounded-xl text-black text-2xl font-grotesk">Contact Us</h3>
         <p className="text-base font-grotesk max-w-xs my-4 text-center lg:text-start">Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
       </div>
-      <div className="flex items-center justify-between bg-light-gray p-16 rounded-4xl gap-10 font-grotesk">
-        <div className="w-full lg:max-w-lg">
+      <div className="bg-light-gray p-16 rounded-4xl gap-x-10 font-grotesk">
+        <div className="w-full ">
           <form className="space-y-6">
             <fieldset className="flex flex-col lg:flex-row gap-x-8 mb-6">
               <label className="flex items-center gap-3 cursor-pointer select-none">
@@ -78,16 +77,7 @@ export default function ContactUs() {
             </button>
           </form>
         </div>
-
-        <div className="hidden lg:inline -mr-85">
-          <img
-            src={contactUsIllustration}
-            alt="Contact Us illustration"
-            className="object-contain max-w-xl"
-            loading="lazy"
-          />
-        </div>
       </div>
-    </section>
+    </section >
   )
 }
