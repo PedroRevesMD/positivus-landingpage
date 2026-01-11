@@ -58,7 +58,7 @@ O design original foi criado por [Olga Averchenko](https://www.figma.com/@olgaav
 
 ## 📝 Status do Projeto
 
-🚧 Em desenvolvimento
+🚧 Finalizado (Obs: O projeto apenas receberá refatoração e melhorias a partir de agora)
 
 ## 📄 Licença
 
