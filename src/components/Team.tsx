@@ -1,91 +1,74 @@
 import "../index.css"
+import JohnPic from "../assets/johnpic.webp"
+import JanePic from "../assets/janepic.webp"
+import MichaelPic from "../assets/michaelpic.webp"
+import EmilyPic from "../assets/emilypic.webp"
+import BrianPic from "../assets/brianpic.webp"
+import SarahPic from "../assets/sarahpic.webp"
+
+import type { TeamCardType } from "../types/TeamCardType";
+import TeamCard from "./TeamCard"
+
+export const teamMembers: TeamCardType[] = [
+  {
+    id: "00",
+    name: "John Smith",
+    position: "CEO and Founder",
+    imgUrlPath: `${JohnPic}`,
+    description: "7+ years of experience in project management and team leadership. Strong organizational and communication skills"
+  },
+  {
+    id: "01",
+    name: "Jane Doe",
+    position: "Director of Operations",
+    imgUrlPath: `${JanePic}`,
+    description: "7+ years of experience in project management and team leadership. Strong organizational and communication skills"
+  },
+  {
+    id: "02",
+    name: "Michael Brown",
+    position: "Senior SEO Specialist",
+    imgUrlPath: `${MichaelPic}`,
+    description: "5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization"
+  },
+  {
+    id: "03",
+    name: "Emily Johnson",
+    position: "PPC Manager",
+    imgUrlPath: `${EmilyPic}`,
+    description: "3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis"
+  },
+  {
+    id: "04",
+    name: "Brian Williams",
+    position: "Social Media Specialist",
+    imgUrlPath: `${BrianPic}`,
+    description: "4+ years of experience in social media marketing. Expert in scheduling content and analyzing metrics"
+  },
+  {
+    id: "05",
+    name: "Sarah Kim",
+    position: "Content Creator",
+    imgUrlPath: `${SarahPic}`,
+    description: "2+ years of experience in writing and editing. Skilled in creating compelling, SEO-optimized content."
+  }
+];
 
 export default function Team() {
   return (
-    <section>
-      <h3>Team</h3>
-      <p>Meet the skilled and experienced team behind our successful digital marketing strategies</p>
-      <ul>
-        <li>
-          <article>
-            <header>
-              <img src="" alt="" />
-              <div>
-                <h4>John Smith</h4>
-                <p>CEO and Founder</p>
-              </div>
-              <a href="">[ÍCONE_LINKEDIN]</a>
-            </header>
-            <p>10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy</p>
-          </article>
-        </li>
-        <li>
-          <article>
-            <header>
-              <img src="" alt="" />
-              <div>
-                <h4>Jane Doe</h4>
-                <p>Director of Operations</p>
-              </div>
-              <a href="">[ÍCONE_LINKEDIN]</a>
-            </header>
-            <p>7+ years of experience in project management and team leadership. Strong organizational and communication skills</p>
-          </article>
-        </li>
-        <li>
-          <article>
-            <header>
-              <img src="" alt="" />
-              <div>
-                <h4>Michael Brown</h4>
-                <p>Senior SEO Specialist</p>
-              </div>
-              <a href="">[ÍCONE_LINKEDIN]</a>
-            </header>
-            <p>5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization</p>
-          </article>
-        </li>
-        <li>
-          <article>
-            <header>
-              <img src="" alt="" />
-              <div>
-                <h4>Emily Johnson</h4>
-                <p>PPC Manager</p>
-              </div>
-              <a href="">[ÍCONE_LINKEDIN]</a>
-            </header>
-            <p>3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis</p>
-          </article>
-        </li>
-        <li>
-          <article>
-            <header>
-              <img src="" alt="" />
-              <div>
-                <h4>Brian Williams</h4>
-                <p>Social Media Specialist</p>
-              </div>
-              <a href="">[ÍCONE_LINKEDIN]</a>
-            </header>
-            <p>4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement</p>
-          </article>
-        </li>
-        <li>
-          <article>
-            <header>
-              <img src="" alt="" />
-              <div>
-                <h4>Sarah Kim</h4>
-                <p>Content Creator</p>
-              </div>
-              <a href="">[ÍCONE_LINKEDIN]</a>
-            </header>
-            <p>2+ years of experience in writing and editing. Skilled in creating compelling, SEO-optimized content for various industries</p>
-          </article>
-        </li>
+    <section className="max-w-screen m-20">
+      <div className="flex flex-col lg:flex-row gap-x-8 items-center">
+        <h3 className="font-medium bg-lime-green p-2 rounded-xl text-dark-gray text-2xl font-grotesk">Team</h3>
+        <p className="text-base font-grotesk max-w-[450px] my-4 text-center lg:text-start">Meet the skilled and experienced team behind our successful digital marketing strategies</p>
+      </div>
+      <ul className="grid grid-cols-1 lg:grid-cols-3 my-6">
+        {teamMembers.map((member) => (
+          <TeamCard id={member.id} imgUrlPath={member.imgUrlPath} name={member.name} position={member.position} description={member.description} />
+        ))}
       </ul>
-      <button type="button">See all team</button>
-    </section>
+      <div className="flex justify-center lg:justify-end lg:mr-26 max-w-screen my-4">
+        <button type="button" className="bg-dark-gray font-grotesk text-white w-fit px-16 py-4 my-4 rounded-lg" >See all team</button>
+      </div>
+    </section >
   )
 }
