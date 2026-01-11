@@ -4,6 +4,7 @@ import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Logos from "./components/Logos";
 import Services from "./components/Services";
 import Team from "./components/Team";
 import Testimonials from "./components/Testimonials";
@@ -14,6 +15,7 @@ export default function App() {
     <>
       <Header />
       <Hero />
+      <Logos />
       <Services />
       <CallSection />
       <CaseStudies />
